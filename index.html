@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </header>
+  <body>
+    
+    <form id="survey-form" >
+        <h1 style="color: green;" id="title">Survey Form</h1>
+        <p id="description" style="color: black;" class="established">Feel Free to Answer The Questions Below Based On Your Own Experience And Opinion. If You Are Not Convinient To Answer The Question, Please Skip It By Answering The Question "No". 
+            Every Answer Would Be Appreciated, Thank You
+        </p>
+        <fieldset>
+        <label style="color: black;" id="name-label">Your Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Your Email Address<input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="email-label">Your Phone Number<input  type="number" placeholder="1234567890" required  /></label>
+        <label id="number-label">Age
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="1" checked /> 15-20</p>
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="2" /> 20-30</p>
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="3" /> 31-40</p>
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="3" /> 41-50</p>
+        </label>
+        
+        
+        <label style="color: black;" id="name-label">Where Do You Live ?
+            <select id="dropdown">
+                <option value="">Select </option>
+                <option value="1">Lucknow</option>
+                <option value="2">Delhi</option>
+                <option value="3">Mumbai</option>
+                <option value="4">Gurugram</option>
+                <option value="5">Other</option>
+              </select>
+        </label>
+        <label>How Would You Rate Your Proffiency in Coding?
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="1" checked /> Beginner</p>
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="2" /> Intermediate</p>
+            <p style="font-weight: 200;"><input type="radio" class="inline" name="attribute" value="3" /> Advanced</p>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Have You Ever Appeared In Any Coding Contest ?</label>
+          <p><input type="radio" class="inline" name="attribute" value="1" checked /> Yes</p>
+          <p><input type="radio" class="inline" name="attribute" value="2" /> No</p>
+          
+      </fieldset>
+      
+     
+      
+      <fieldset>
+        <label> Discuss What Drives Your Passion for Coding at Outline your aspiration in the filed.
+          <textarea rows="5"  ></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> What are some of the challenges you face while coding ?
+          
+          <textarea rows="5"  ></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Please list the data structures and algorithms you have a strong understanding of.
+          
+          <textarea rows="5"  ></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
